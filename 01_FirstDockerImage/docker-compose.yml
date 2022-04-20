@@ -1,0 +1,8 @@
+version: '3.9'
+services: 
+  simpleubuntu: 
+    container_name: mycontainer
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    

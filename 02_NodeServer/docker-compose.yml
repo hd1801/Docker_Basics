@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  myfirstserver:
+    container_name: nodeserver
+    command: node index.js
+    ports: 
+     - "127.0.0.1:3200:1234"
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+ 
